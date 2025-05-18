@@ -1,20 +1,22 @@
 import './App.css'
-import NavBar from './layouts/Navbar'
-import AboutSection from './sections/AboutSection'
-import HeroSection from './sections/HeroSection'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import NavBar from './layouts/Navbar';
+import HeroSection from './sections/HeroSection';
+import AboutSection from './sections/AboutSection';
+import ProjectSection from './sections/ProjectSection';
 
 function App() {
   
 
   return (
-    <>
+    <BrowserRouter>
       <NavBar />
-      <main>
+     
         <HeroSection />
         <AboutSection />
-      </main>
-    </>
-  )
+        <ProjectSection />
+    </BrowserRouter>
+  );
 }
 
 export default App
