@@ -4,6 +4,8 @@ import NavBar from './layouts/Navbar';
 import HeroSection from './sections/HeroSection';
 import AboutSection from './sections/AboutSection';
 import ProjectSection from './sections/ProjectSection';
+import ContactSection from './sections/ContactSection';
+import Footer from './sections/Footer';
 
 function App() {
   
@@ -14,7 +16,9 @@ function App() {
      
         <HeroSection />
         <AboutSection />
-        <ProjectSection />
+      <ProjectSection />
+      <ContactSection />
+      <Footer />
     </BrowserRouter>
   );
 }
