@@ -1,12 +1,46 @@
-# React + Vite
+# 🌐 My Portfolio Website
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Welcome to my personal portfolio website!  
+This site showcases who I am, what I’ve built, and how to get in touch with me. It was created to demonstrate my frontend development skills, design sense, and passion for building user-friendly interfaces.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🚀 Live Demo
 
-## Expanding the ESLint configuration
+🔗 [View Live Website](https://your-portfolio-link.com)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 📸 Features
+
+- Responsive layout for all screen sizes (desktop, tablet, mobile)
+- Smooth scroll navigation
+- Projects section with links and previews
+- Contact form with EmailJS integration
+- Clean, accessible UI with modern animations
+
+---
+
+## 🛠 Built With
+
+- **React.js** – Component-based frontend framework
+- **Tailwind CSS** – Utility-first CSS framework for styling
+- **EmailJS** – For sending messages via the contact form
+- **React Icons** – For scalable vector icons
+- **Framer Motion** – For subtle animations and transitions
+
+---
+
+## 📂 Folder Structure
+
+```bash
+my-portfolio/
+├── public/
+│   └── assets/            # public assets
+├── src/
+│   ├── assets/            # Images and Icons
+│   ├── layouts/           # Navbar
+│   ├── sections/          # Home, About, Projects, Contact, Footer
+│   ├── App.jsx            # Main app component
+│   ├── index.css          # Global styles
+│   └── main.jsx           # App entry point
