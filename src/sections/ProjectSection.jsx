@@ -20,7 +20,6 @@ const ProjectSection = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-6 text-left md:grid-cols-2 lg:grid-cols-3">
-          
           {/* Project 1 */}
           <div className="bg-[#1A1A1A] rounded-xl transition duration-300 transform hover:-translate-y-2 hover:shadow-[#2DD4BF]/20 shadow-lg">
             <div className=" h-[25vh] relative overflow-hidden rounded-t-xl">
@@ -35,8 +34,9 @@ const ProjectSection = () => {
                 myPortfolio Landing Page
               </h2>
               <span className="text-gray-400 ">
-                A modern headphones landing page featuring a clean UI, product
-                highlights, and a clear call-to-action.
+                A responsive and modern portfolio site designed to highlight
+                professional skills, projects, and personal branding with a
+                clean user interface.
               </span>
             </div>
 
@@ -50,13 +50,27 @@ const ProjectSection = () => {
             </div>
 
             <div className="flex px-5 py-5 gap-4 font-medium text-[#2DD4BF]">
-              <span className="inline-flex gap-1 items-center cursor-pointer hover:text-[#5FE3D2]">
-                <Code className="w-5 h-5" /> Code
-              </span>
-              <span className="inline-flex gap-1 items-center cursor-pointer hover:text-[#5FE3D2]">
-                <SquareArrowOutUpRight className="w-4 h-4" />
-                Live Demo
-              </span>
+              <a
+                href="https://github.com/onumaeleanyagift/myPortfolio/tree/main"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2DD4BF]"
+              >
+                <span className="inline-flex gap-1 items-center cursor-pointer hover:text-[#5FE3D2]">
+                  <Code className="w-5 h-5" /> Code
+                </span>
+              </a>
+              <a
+                href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2DD4BF]"
+              >
+                <span className="inline-flex gap-1 items-center cursor-pointer hover:text-[#5FE3D2]">
+                  <SquareArrowOutUpRight className="w-4 h-4" />
+                  Live Demo
+                </span>
+              </a>
             </div>
           </div>
 
@@ -79,10 +93,10 @@ const ProjectSection = () => {
 
             <div className="flex flex-wrap gap-2 px-5 font-medium">
               <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
-                React
+                Tailwind
               </span>
               <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
-                Tailwind
+                React
               </span>
             </div>
 
@@ -98,7 +112,7 @@ const ProjectSection = () => {
                 </span>
               </a>
               <a
-                href="https://onumaeleanyagift.github.io/alx_html_css/headphones/"
+                href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#2DD4BF]"
