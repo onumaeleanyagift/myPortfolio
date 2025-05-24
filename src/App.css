@@ -3,6 +3,10 @@
   text-align: center;
 }
 
+html {
+  scroll-behavior: smooth
+}
+
 nav, a {
   color: #FFFF;
   font-weight: 500;
