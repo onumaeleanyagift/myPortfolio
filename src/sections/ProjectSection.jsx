@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import image1 from "../assets/images/Headphones.png";
 import image2 from "../assets/images/Jobfinder.png";
-import image3 from "../assets/images/myportfolio.png"
+import image3 from "../assets/images/myPortfolio.png"
 import { SquareArrowOutUpRight } from "lucide-react";
 import { Code } from "lucide-react";
 
