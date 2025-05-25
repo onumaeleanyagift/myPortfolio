@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import image1 from "../assets/images/Headphones.png";
 import image2 from "../assets/images/Jobfinder.png";
-import image3 from "../assets/images/myPortfolio.png"
+import image3 from "../assets/images/myPortfolio.png";
 import { SquareArrowOutUpRight } from "lucide-react";
 import { Code } from "lucide-react";
 
@@ -14,7 +14,7 @@ const ProjectSection = () => {
           <div className="w-20 h-1 bg-[#2DD4BF] mx-auto mb-3"></div>
           <span className="font-semibold text-lg">
             A selection of my recent work. Each project reflects my commitment
-            to clean code and <br />
+            to clean code and <br className="hidden md:block" />
             engaging user experiences.
           </span>
         </div>
@@ -61,7 +61,7 @@ const ProjectSection = () => {
                 </span>
               </a>
               <a
-                href=""
+                href="https://onumaeleanya.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#2DD4BF]"
@@ -112,7 +112,7 @@ const ProjectSection = () => {
                 </span>
               </a>
               <a
-                href=""
+                href="https://job-finder-opal.vercel.app/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#2DD4BF]"

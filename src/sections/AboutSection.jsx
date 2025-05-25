@@ -19,7 +19,7 @@ const AboutSection = () => {
             <h2 className="text-2xl text-[#2DD4BF] font-semibold pb-8">
               Who I am
             </h2>
-            <p className="text-justify pb-8 font-medium">
+            <p className="text-justify max-w- pb-8 font-medium">
               I'm a Front-End Developer with a background in Computer
               Engineering and a passion for building responsive, user-friendly
               web applications. With a strong command of HTML5, CSS, and

@@ -19,7 +19,7 @@ const HeroSection = () => {
           <div className="flex flex-col items-center justify-between pt-40 lg:flex-row md:flex-row">
             <div className=" text-left space-y-6 md:w-1/2">
               <p className="text-[#2CCEB9] text-lg lg:text-xl md:text-xl font-medium">
-                FRONT-END DEVELOPER
+                SOFTWARE ENGINEER
               </p>
               <h1 className="font-bold text-4xl lg:text-6xl md:text-5xl">
                 Hi, I'm Onuma<span className="text-[#14B8A6]">.</span>
