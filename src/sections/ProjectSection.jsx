@@ -14,7 +14,7 @@ const ProjectSection = () => {
           <div className="w-20 h-1 bg-[#2DD4BF] mx-auto mb-3"></div>
           <span className="font-semibold text-lg">
             A selection of my recent work. Each project reflects my commitment
-            to clean code and <br className="hidden md:block" />
+            to clean code and <br className="hidden" />
             engaging user experiences.
           </span>
         </div>
@@ -184,7 +184,7 @@ const ProjectSection = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <button className="inline-flex bg-[#161616] text-[#2DD4BF] border-[#2DD4BF] border-2 gap-1 hover:bg-[#2DD4BF] hover:border-[#2DD4BF] hover:text-[#000]">
+            <button className="inline-flex bg-[#161616] text-[#2DD4BF] text-sm md:text-lg border-[#2DD4BF] border-2 gap-1 hover:bg-[#2DD4BF] hover:border-[#2DD4BF] hover:text-[#000]">
               See More on GitHub
             </button>
           </a>

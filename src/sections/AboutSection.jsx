@@ -20,7 +20,7 @@ const AboutSection = () => {
               Who I am
             </h2>
             <p className="text-justify max-w- pb-8 font-medium">
-              I'm a Front-End Developer with a background in Computer
+              I'm a Software Engineer with a background in Computer
               Engineering and a passion for building responsive, user-friendly
               web applications. With a strong command of HTML5, CSS, and
               JavaScript, I focus on writing clean, maintainable code and
@@ -34,7 +34,7 @@ const AboutSection = () => {
               make the web more accessible, efficient, and engaging.
             </p>
             <a href="/ONUMA_ELEANYA_GIFT_RESUME.pdf" download>
-              <button className="inline-flex bg-[#161616] text-[#2DD4BF] border-[#2DD4BF] border-2 gap-1 hover:bg-[#2DD4BF] hover:border-[#2DD4BF] hover:text-[#000]">
+              <button className="inline-flex bg-[#161616] text-[#2DD4BF] text-sm md:text-lg border-[#2DD4BF] border-2 gap-1 hover:bg-[#2DD4BF] hover:border-[#2DD4BF] hover:text-[#000]">
                 <HardDriveDownload className="w-5 h-5" /> Download Resume
               </button>
             </a>
