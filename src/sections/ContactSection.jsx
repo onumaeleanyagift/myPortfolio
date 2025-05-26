@@ -1,5 +1,4 @@
-import React, {useRef} from "react";
-import emailjs from 'emailjs-com';
+import React, {useState} from "react";
 import { MapPin } from "lucide-react";
 import { Mail } from "lucide-react"
 import { Github } from "lucide-react";
@@ -9,21 +8,28 @@ import { Twitter } from "lucide-react";
 
 const ContactSection = () => {
 
-  const form = useRef();
+  const [submitted, setSubmitted] = useState(false);
 
-  const sendEmail = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
-    emailjs.sendForm("service_vcrtdso", "template_bli8lr2", e.target, "6bNkC4JOBPcKNb26T")
-      .then(
-        (result) => {
-          alert('Message sent successfully!');
-          form.current.reset();
-        },
-        (error) => {
-          alert('Failed to send message' + error.text);
-        }
-      );
+    const formData = new FormData(e.target);
+
+    try {
+      const res = await fetch("https://getform.io/f/bolomgza", {
+        method: "POST",
+        body: formData,
+      });
+
+      if (res.ok) {
+        setSubmitted(true);
+        setTimeout(() => setSubmitted(false), 3000);
+      } else {
+        alert("Error submitting form");
+      }
+    } catch (err) {
+      alert("Submission failed");
+    }
 
     e.target.reset();
   };
@@ -43,10 +49,8 @@ const ContactSection = () => {
         <div className="grid grid-cols-1 gap-12  md:grid-cols-2 lg:grid-cols-2">
           <div>
             <form
-              action=""
+              onSubmit={handleSubmit}
               className="space-y-6 text-left font-semibold"
-              onSubmit={sendEmail}
-              ref={form}
             >
               <div>
                 <label htmlFor="name" className="text-gray-300 mb-2">
@@ -54,7 +58,7 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="text"
-                  name="user_name"
+                  name="name"
                   placeholder="Your name"
                   required
                   className="w-full px-4 py-3 mt-2 bg-[#1d1d1d] border border-gray-700 rounded-lg focus:outline-none focus:border-[#2DD4BF]"
@@ -66,7 +70,7 @@ const ContactSection = () => {
                 </label>
                 <input
                   type="email"
-                  name="email_name"
+                  name="email"
                   placeholder="Your email"
                   required
                   className="w-full px-4 py-3 mt-2 bg-[#1d1d1d] border border-gray-700 rounded-lg focus:outline-none focus:border-[#2DD4BF]"
@@ -84,20 +88,23 @@ const ContactSection = () => {
                   className="w-full px-4 py-3 mt-2 h-40 bg-[#1d1d1d] border border-gray-700 rounded-lg resize-none focus:outline-none focus:border-[#2DD4BF]"
                 ></textarea>
               </div>
-              <button type="submit" className="w-full text-center bg-[#2CCEB9] gap-1 hover:bg-[#14B8A6] hover:border-[#14B8A6] lg:text-lg">
+              <button
+                type="submit"
+                className="w-full text-center bg-[#2CCEB9] gap-1 hover:bg-[#14B8A6] hover:border-[#14B8A6] lg:text-lg"
+              >
                 Send Message
               </button>
             </form>
           </div>
 
           <div>
-            <div className="bg-[#1a1a1a] p-8 rounded-lg h-full text-left">
+            <div className="bg-[#1a1a1a] p-4 md:p-8 rounded-lg h-full text-left">
               <h3 className="text-2xl font-semibold mb-6 text-[#2DD4BF]">
                 Contact Information
               </h3>
               <div className="space-y-6">
                 <div id="Location" className="flex items-start">
-                  <div className="bg-[#252525] text-[#2DD4BF] h-full p-3 rounded-lg mr-4">
+                  <div className="bg-[#252525] text-[#2DD4BF] h-full p-2 rounded-lg mr-2 md:mr-4">
                     <MapPin />
                   </div>
                   <div>
@@ -107,7 +114,7 @@ const ContactSection = () => {
                 </div>
 
                 <div id="Email" className="flex items-start">
-                  <div className="bg-[#252525] text-[#2DD4BF] h-full p-3 rounded-lg mr-4">
+                  <div className="bg-[#252525] text-[#2DD4BF] h-full p-2 rounded-lg mr-2 md:mr-4">
                     <Mail />
                   </div>
                   <div>
@@ -155,6 +162,11 @@ const ContactSection = () => {
             </div>
           </div>
         </div>
+        {submitted && (
+          <div className="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-[#252525] text-[#FFF] font-semibold p-12 rounded-lg shadow-lg z-50 text-sm md:text-lg">
+            Thank you! Message sent.
+          </div>
+        )}
       </div>
     </div>
   );
