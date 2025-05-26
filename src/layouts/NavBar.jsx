@@ -33,7 +33,7 @@ const NavBar = () => {
         <div className="container flex items-center justify-between mx-auto py-1">
           <div>
             <a href="#">
-              <img src={logo} alt="Logo" className="h-20" />
+              <img src={logo} alt="Logo" className="h-12 pl-2 md:pl-0 md:h-20" />
             </a>
           </div>
 
@@ -68,7 +68,7 @@ const NavBar = () => {
           className="flex md:hidden bg-[#121212] shadow-lg fixed w-full z-10"
         >
           <div
-            className={`container mx-auto px-4 pt-24 pb-3 space-y-3 flex flex-col ${isOpen ? "block" : "hidden"
+            className={`container mx-auto px-4 pt-16 pb-5 space-y-3 flex flex-col ${isOpen ? "block" : "hidden"
               }`}
           >
             <span>
