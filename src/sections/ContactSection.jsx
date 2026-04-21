@@ -109,7 +109,7 @@ const ContactSection = () => {
                   </div>
                   <div>
                     <h4 className="font-semibold">Location</h4>
-                    <p className="text-gray-400 font-medium">Lagos, Nigeria</p>
+                    <p className="text-gray-400 font-medium">Abuja, Nigeria</p>
                   </div>
                 </div>
 
@@ -144,16 +144,6 @@ const ContactSection = () => {
                     >
                       <span className="bg-[#252525] w-10 h-10 flex items-center justify-center rounded-full text-gray-400 hover:text-[#2DD4BF] hover:bg-[#2a2a2a] transition duration-300 cursor-pointer">
                         <Linkedin />
-                      </span>
-                    </a>
-
-                    <a
-                      href="https://x.com/onumajnr"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <span className="bg-[#252525] w-10 h-10 flex items-center justify-center rounded-full text-gray-400 hover:text-[#2DD4BF] hover:bg-[#2a2a2a] transition duration-300 cursor-pointer">
-                        <Twitter />
                       </span>
                     </a>
                   </div>
