@@ -13,7 +13,7 @@ const Footer = () => {
               </a>
             </div>
             <div className="text-gray-400 font-semibold text-center text-sm md:text-right md:text-lg">
-              <p>© 2025 Onuma Eleanya. All rights reserved.</p>
+              <p>© {new Date().getFullYear()} Onuma Eleanya. All rights reserved.</p>
             </div>
           </div>
         </div>
