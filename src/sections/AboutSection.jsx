@@ -5,6 +5,10 @@ import icon2 from "../assets/icons/css3.svg";
 import icon3 from "../assets/icons/js.svg";
 import icon4 from "../assets/icons/react.svg";
 import icon5 from "../assets/icons/git.svg";
+import icon6 from "../assets/icons/python.png";
+import icon7 from "../assets/icons/tailwind.png";
+import icon8 from "../assets/icons/next.png";
+
 
 const AboutSection = () => {
   return (
@@ -20,20 +24,22 @@ const AboutSection = () => {
               Who I am
             </h2>
             <p className="text-justify max-w- pb-8 font-medium">
-              I'm a Software Engineer with a background in Computer
-              Engineering and a passion for building responsive, user-friendly
-              web applications. With a strong command of HTML5, CSS, and
-              JavaScript, I focus on writing clean, maintainable code and
-              delivering reliable software through thorough testing and code
-              reviews. <br />
+              I am a software engineer focused on frontend development,
+              automation, and network systems. I build scalable web applications
+              and solve complex technical problems with clean, maintainable
+              code. I improve performance through automation and strong system
+              design.
               <br />
-              Driven by curiosity and a love for technology, I stay up to date
-              with the latest web trends and tools to continuously improve the
-              user experience. My work is rooted in solving real problems,
-              enhancing digital interactions, and contributing to solutions that
-              make the web more accessible, efficient, and engaging.
+              <br />
+              I work well with technical teams and manage projects with
+              clear structure and consistency. I focus on responsive design,
+              SEO, and accessibility to deliver reliable user experiences. I use
+              JavaScript and Python confidently, and I have a solid
+              understanding of data structures and databases. I stay committed
+              to continuous learning and apply new tools and practices to
+              improve my work.
             </p>
-            <a href="/ONUMA_ELEANYA_GIFT_RESUME.pdf" download>
+            <a href="/ONUMA_ELEANYA_GIFT_CV_26.pdf" download>
               <button className="inline-flex bg-[#161616] text-[#2DD4BF] text-sm md:text-lg border-[#2DD4BF] border-2 gap-1 hover:bg-[#2DD4BF] hover:border-[#2DD4BF] hover:text-[#000]">
                 <HardDriveDownload className="w-5 h-5" /> Download Resume
               </button>
@@ -45,20 +51,32 @@ const AboutSection = () => {
             </h2>
             <div className=" grid grid-cols-2 gap-6 lg:grid-cols-3 md:grid-cols-3">
               <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon1} alt="HTML5 Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">HTML5</span>
+                <img src={icon8} alt="Next Icon" className="w-8 lg:w-12" />
+                <span className="font-semibold pt-4">Next</span>
               </div>
               <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon2} alt="CSS3 Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">CSS3</span>
+                <img src={icon4} alt="React Icon" className="w-8 lg:w-12" />
+                <span className="font-semibold pt-4">React</span>
+              </div>
+              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
+                <img src={icon7} alt="Tailwind Icon" className="w-8 lg:w-12" />
+                <span className="font-semibold pt-4">Tailwind</span>
+              </div>
+              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
+                <img src={icon6} alt="Python Icon" className="w-8 lg:w-12" />
+                <span className="font-semibold pt-4">Python</span>
               </div>
               <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
                 <img src={icon3} alt="JS Icon" className="w-8 lg:w-12" />
                 <span className="font-semibold pt-4">JavaScript</span>
               </div>
               <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon4} alt="React Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">React</span>
+                <img src={icon2} alt="CSS3 Icon" className="w-8 lg:w-12" />
+                <span className="font-semibold pt-4">CSS3</span>
+              </div>
+              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
+                <img src={icon1} alt="HTML5 Icon" className="w-8 lg:w-12" />
+                <span className="font-semibold pt-4">HTML5</span>
               </div>
               <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
                 <img src={icon5} alt="Git Icon" className="w-8 lg:w-12" />
