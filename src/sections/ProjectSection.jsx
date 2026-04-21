@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import image1 from "../assets/images/Headphones.png";
 import image2 from "../assets/images/Jobfinder.png";
-import image3 from "../assets/images/myPortfolio.png";
+import image3 from "../assets/images/churchwebapp.png";
 import { SquareArrowOutUpRight } from "lucide-react";
 import { Code } from "lucide-react";
 
@@ -25,33 +25,35 @@ const ProjectSection = () => {
             <div className=" h-[25vh] relative overflow-hidden rounded-t-xl">
               <img
                 src={image3}
-                alt="Headphones full page"
-                className=" animate-slow-scroll z-0"
+                alt="Church full page"
+                className=" animate-slow-scroll z-0 blur-xl"
               />
+              <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-red-600 uppercase font-black bg-white p-4">In Development</span>
             </div>
             <div className=" p-5">
-              <h2 className="text-xl font-semibold mb-2">
-                myPortfolio Landing Page
-              </h2>
+              <h2 className="text-xl font-semibold mb-2">Church Web App</h2>
               <span className="text-gray-400 ">
-                A responsive and modern portfolio site designed to highlight
-                professional skills, projects, and personal branding with a
-                clean user interface.
+                Church App A modern church web app with sermon streaming, daily
+                devotionals, and community engagement features for a connected
+                and user-friendly experience.
               </span>
             </div>
 
             <div className="flex flex-wrap gap-2 px-5 font-medium">
               <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
-                Tailwind
+                Python
               </span>
               <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
-                React
+                JavaScript
+              </span>
+              <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
+                Tailwind
               </span>
             </div>
 
             <div className="flex px-5 py-5 gap-4 font-medium text-[#2DD4BF]">
               <a
-                href="https://github.com/onumaeleanyagift/myPortfolio/tree/main"
+                href="https://github.com/onumaeleanyagift/dominion-city-alapere"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#2DD4BF]"
@@ -61,9 +63,9 @@ const ProjectSection = () => {
                 </span>
               </a>
               <a
-                href="https://onumaeleanya.vercel.app/"
-                target="_blank"
-                rel="noopener noreferrer"
+                // href=""
+                // target="_blank"
+                // rel="noopener noreferrer"
                 className="text-[#2DD4BF]"
               >
                 <span className="inline-flex gap-1 items-center cursor-pointer hover:text-[#5FE3D2]">
@@ -79,7 +81,7 @@ const ProjectSection = () => {
             <div className=" h-[25vh] relative overflow-hidden rounded-t-xl">
               <img
                 src={image2}
-                alt="Headphones full page"
+                alt="JobFinder full page"
                 className=" animate-slow-scroll z-0"
               />
             </div>
