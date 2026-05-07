@@ -39,11 +39,6 @@ const AboutSection = () => {
               to continuous learning and apply new tools and practices to
               improve my work.
             </p>
-            <a href="/ONUMA_ELEANYA_GIFT_CV_26.pdf" download>
-              <button className="inline-flex bg-[#161616] text-[#2DD4BF] text-sm md:text-lg border-[#2DD4BF] border-2 gap-1 hover:bg-[#2DD4BF] hover:border-[#2DD4BF] hover:text-[#000]">
-                <HardDriveDownload className="w-5 h-5" /> Download Resume
-              </button>
-            </a>
           </div>
           <div className="lg:w-1/2 md:w-1/2">
             <h2 className="text-2xl text-center text-[#2DD4BF] font-semibold pb-8 lg:text-left md:text-left">
