@@ -9,7 +9,6 @@ import icon6 from "../assets/icons/python.png";
 import icon7 from "../assets/icons/tailwind.png";
 import icon8 from "../assets/icons/next.png";
 
-
 const AboutSection = () => {
   return (
     <div id="about" className="bg-[#161616] py-20">
@@ -18,64 +17,109 @@ const AboutSection = () => {
           <h2 className="font-bold text-4xl mb-2">About Me</h2>
           <div className="w-20 h-1 bg-[#2DD4BF] mx-auto"></div>
         </div>
-        <div className="flex flex-col lg:flex-row md:flex-row gap-12 text-justify">
-          <div className="lg:w-1/2 md:w-1/2">
+        <div className="flex flex-col gap-12 text-justify">
+          <div>
             <h2 className="text-2xl text-[#2DD4BF] font-semibold pb-8">
               Who I am
             </h2>
             <p className="text-justify max-w- pb-8 font-medium">
-              I am a software engineer focused on frontend development,
-              automation, and network systems. I build scalable web applications
-              and solve complex technical problems with clean, maintainable
-              code. I improve performance through automation and strong system
-              design.
+              Software engineer focused on frontend development, backend APIs,
+              and automation systems. I build web applications using React,
+              TypeScript, Python, and Flask, with experience in database
+              management and workflow optimization.
               <br />
-              <br />
-              I work well with technical teams and manage projects with
-              clear structure and consistency. I focus on responsive design,
-              SEO, and accessibility to deliver reliable user experiences. I use
-              JavaScript and Python confidently, and I have a solid
-              understanding of data structures and databases. I stay committed
-              to continuous learning and apply new tools and practices to
-              improve my work.
+              <br />I work with technical teams to deliver reliable features and
+              improve system efficiency. I focus on responsive UI, performance,
+              and accessible design. I use JavaScript and Python for
+              development, along with SQL, REST APIs, and Git for collaborative
+              work. I continue to improve my skills through hands-on projects
+              and real engineering tasks.
             </p>
           </div>
-          <div className="lg:w-1/2 md:w-1/2">
+          <div>
             <h2 className="text-2xl text-center text-[#2DD4BF] font-semibold pb-8 lg:text-left md:text-left">
-              My Skills
+              My Skills & Technologies
             </h2>
-            <div className=" grid grid-cols-2 gap-6 lg:grid-cols-3 md:grid-cols-3">
-              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon8} alt="Next Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">Next</span>
+            <div className=" grid grid-rows-2 gap-4 lg:grid-rows-1 md:grid-rows-1">
+              <div className="flex flex-col items-justify bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
+                <div className="font-semibold pb-4">Frontend</div>
+                <div className="grid grid-cols-3 gap-2 text-center lg:grid-cols-7 md:grid-cols-5 text-[#2DD4BF]">
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    HTML5
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    CSS3
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    JavaScript
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    React
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Next.js
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Tailwind
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Bootstrap
+                  </span>
+                </div>
               </div>
-              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon4} alt="React Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">React</span>
+
+              <div className="flex flex-col items-justify bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
+                <div className="font-semibold pb-4">Backend</div>
+                <div className="grid grid-cols-3 gap-2 text-center lg:grid-cols-7 md:grid-cols-5 text-[#2DD4BF]">
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Node.js
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Express.js
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Flask
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Python
+                  </span>
+                </div>
               </div>
-              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon7} alt="Tailwind Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">Tailwind</span>
+
+              <div className="flex flex-col items-justify bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
+                <div className="font-semibold pb-4">Databases</div>
+                <div className="grid grid-cols-3 gap-2 text-center lg:grid-cols-7 md:grid-cols-5 text-[#2DD4BF]">
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    SQL
+                  </span>
+                </div>
               </div>
-              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon6} alt="Python Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">Python</span>
-              </div>
-              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon3} alt="JS Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">JavaScript</span>
-              </div>
-              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon2} alt="CSS3 Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">CSS3</span>
-              </div>
-              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon1} alt="HTML5 Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">HTML5</span>
-              </div>
-              <div className="flex flex-col items-center bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
-                <img src={icon5} alt="Git Icon" className="w-8 lg:w-12" />
-                <span className="font-semibold pt-4">Git</span>
+
+              <div className="flex flex-col items-justify bg-[#1D1D1D] rounded-lg p-6 hover:bg-[#252525]">
+                <div className="font-semibold pb-4">Tools</div>
+                <div className="grid grid-cols-3 gap-2 text-center lg:grid-cols-7 md:grid-cols-5 text-[#2DD4BF]">
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Git
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    GitHub
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    REST APIs
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Postman
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    VS code
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Figma
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    OWS
+                  </span>
+                </div>
               </div>
             </div>
           </div>
