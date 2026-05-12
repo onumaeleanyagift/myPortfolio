@@ -66,7 +66,7 @@ const ProjectSection = () => {
                 </span>
               </a>
               <a
-                href=""
+                // href=""
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#2DD4BF]"
