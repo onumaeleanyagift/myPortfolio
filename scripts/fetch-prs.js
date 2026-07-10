@@ -1,4 +1,4 @@
-const fs = import("fs");
+import fs from "node:fs";
 
 const username = "onumaeleanyagift";
 
