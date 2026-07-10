@@ -36,8 +36,7 @@ const PullRequest = () => {
                 {pr.title}
               </a>
               <p className="text-xs">
-                {pr.repository_url.replace("https://api.github.com/repos/", "")}{" "}
-                -{" "}
+                {pr.repository.replace("https://api.github.com/repos/", "")} -{" "}
                 <span className="text-[#2DD4BF]">
                   {pr.merged ? "Merged" : "Open"}
                 </span>
