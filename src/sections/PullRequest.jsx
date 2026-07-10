@@ -2,14 +2,25 @@ import React, { useEffect, useState } from "react";
 
 const PullRequest = () => {
   const [prs, setPrs] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState("");
 
   useEffect(() => {
-    fetch(
-      "https://api.github.com/search/issues?q=type:pr+author:onumaeleanyagift",
-    )
-      .then((res) => res.json())
-      .then((data) => setPrs(data.items || []));
+    fetch("/data/pull-requests.json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to fetch pull requests");
+        }
+        return res.json();
+      })
+      .then((data) => setPrs(data))
+      .catch(() => setError("Unable to load pull requests."))
+      .finally(() => setLoading(false));
   }, []);
+
+  if (loading) return <p>Loading pull requests...</p>;
+
+  if (error) return <p>{error}</p>;
 
   return (
     <div id="pullRequest" className="bg-[#121212] py-20">
@@ -21,14 +32,14 @@ const PullRequest = () => {
         <div className="grid grid-cols gap-6 text-justify lg:grid-cols-3 lg:text-justify md:text-center">
           {prs.map((pr) => (
             <div key={pr.id}>
-              <a href={pr.html_url} target="_blank">
+              <a href={pr.url} target="_blank" rel="noopener noreferrer">
                 {pr.title}
               </a>
               <p className="text-xs">
                 {pr.repository_url.replace("https://api.github.com/repos/", "")}{" "}
                 -{" "}
                 <span className="text-[#2DD4BF]">
-                  {pr.pull_request?.merged_at ? "Merged" : "Open"}
+                  {pr.merged ? "Merged" : "Open"}
                 </span>
               </p>
             </div>
