@@ -20,16 +20,70 @@ const ProjectSection = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-6 text-left md:grid-cols-2 lg:grid-cols-2">
+          {/* Project 5 */}
+          <div className="bg-[#1A1A1A] rounded-xl transition duration-300 transform hover:-translate-y-2 hover:shadow-[#2DD4BF]/20 shadow-lg">
+            <div className=" p-5">
+              <h2 className="text-xl font-semibold mb-2">
+                North Light -{" "}
+                <span className="text-red-500 italic">In Development</span>
+              </h2>
+              <span className="text-gray-400 ">
+                North Light is a project management company. I designed and
+                developed its company website, creating the brand identity,
+                responsive UI, and frontend with Next.js and TypeScript while
+                prioritizing SEO, performance, and accessibility.
+              </span>
+            </div>
+
+            <div className="flex flex-wrap gap-2 px-5 font-medium">
+              <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
+                Next.js
+              </span>
+              <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
+                TypeScript
+              </span>
+              <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
+                Tailwind CSS
+              </span>
+              <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
+                Markdown/MDX
+              </span>
+            </div>
+
+            <div className="flex px-5 py-5 gap-4 font-medium text-[#2DD4BF]">
+              <a
+                // href="https://github.com/dominioncityalapere/dcalapere_webapp"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2DD4BF]"
+              >
+                <span className="inline-flex gap-1 items-center cursor-pointer hover:text-[#5FE3D2]">
+                  <Code className="w-5 h-5" /> Code
+                </span>
+              </a>
+              <a
+                // href=""
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[#2DD4BF]"
+              >
+                <span className="inline-flex gap-1 items-center cursor-pointer hover:text-[#5FE3D2]">
+                  <SquareArrowOutUpRight className="w-4 h-4" />
+                  Live Demo
+                </span>
+              </a>
+            </div>
+          </div>
+
           {/* Project 4 */}
           <div className="bg-[#1A1A1A] rounded-xl transition duration-300 transform hover:-translate-y-2 hover:shadow-[#2DD4BF]/20 shadow-lg">
             <div className=" p-5">
               <h2 className="text-xl font-semibold mb-2">
-                Church Web App -{" "}
-                <span className="text-red-500 italic">In Development</span>
+                Dominion City Alapere
               </h2>
               <span className="text-gray-400 ">
                 A modern church platform with sermon streaming, daily
-                devotionals, and community engagement features.
+                devotionals, events, and text-to-speech for the devotional.
               </span>
             </div>
 
@@ -42,9 +96,6 @@ const ProjectSection = () => {
               </span>
               <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
                 Python
-              </span>
-              <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
-                JavaScript
               </span>
               <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
                 Flask
@@ -66,7 +117,7 @@ const ProjectSection = () => {
                 </span>
               </a>
               <a
-                // href=""
+                href="https://dcalapere-webapp-kfjb.vercel.app"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-[#2DD4BF]"

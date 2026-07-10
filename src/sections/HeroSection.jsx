@@ -25,7 +25,8 @@ const HeroSection = () => {
                 Hi, I'm Onuma<span className="text-[#14B8A6]">.</span>
               </h1>
               <p className="text-xl py-2 lg:text-3xl md:text-2xl sm:text-xl">
-                I craft responsive websites where technologies meet creativity
+                I build fast, responsive web applications that solve real
+                problems.
               </p>
               <button
                 onClick={() => handleScroll("project")}

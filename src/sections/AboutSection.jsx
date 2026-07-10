@@ -23,17 +23,17 @@ const AboutSection = () => {
               Who I am
             </h2>
             <p className="text-justify max-w- pb-8 font-medium">
-              Software engineer focused on frontend development, backend APIs,
-              and automation systems. I build web applications using React,
-              TypeScript, Python, and Flask, with experience in database
-              management and workflow optimization.
+              Software Engineer with experience building fullstack web
+              applications, backend APIs, and automation systems. I work with
+              React, TypeScript, JavaScript, Node.js, Express, Python, and Flask
+              to build reliable, responsive applications that solve real
+              problems.
               <br />
-              <br />I work with technical teams to deliver reliable features and
-              improve system efficiency. I focus on responsive UI, performance,
-              and accessible design. I use JavaScript and Python for
-              development, along with SQL, REST APIs, and Git for collaborative
-              work. I continue to improve my skills through hands-on projects
-              and real engineering tasks.
+              <br />I have experience integrating APIs, managing application
+              data, and improving system workflows. I enjoy collaborating with
+              cross-functional teams, writing clean and maintainable code, and
+              building user interfaces that are responsive, accessible, and
+              performant.
             </p>
           </div>
           <div>
@@ -60,10 +60,13 @@ const AboutSection = () => {
                     Next.js
                   </span>
                   <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
-                    Tailwind
+                    Tailwind CSS
                   </span>
                   <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
                     Bootstrap
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Styled Components
                   </span>
                 </div>
               </div>
@@ -91,6 +94,9 @@ const AboutSection = () => {
                 <div className="grid grid-cols-3 gap-2 text-center lg:grid-cols-7 md:grid-cols-5 text-[#2DD4BF]">
                   <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
                     SQL
+                  </span>
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
+                    Supabase
                   </span>
                 </div>
               </div>
