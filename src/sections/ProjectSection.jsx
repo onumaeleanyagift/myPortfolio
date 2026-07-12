@@ -236,7 +236,7 @@ const ProjectSection = () => {
                 JavaScript
               </span>
               <span className="bg-[#252525] text-sm rounded-full px-3 py-1 text-gray-300 ">
-                Tailwind
+                Tailwind CSS
               </span>
             </div>
 
