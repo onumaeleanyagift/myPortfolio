@@ -4,7 +4,7 @@ const username = "onumaeleanyagift";
 
 async function fetchPRs() {
   const response = await fetch(
-    `https://api.github.com/search/issues?q=is:pr+author:${username}&sort=updated&order=desc`,
+    `https://api.github.com/search/issues?q=is:pr+author:${username}&sort=updated&order=desc&per_page=10`,
     {
       headers: {
         Authorization: `Bearer ${process.env.TOKEN_PR_GITHUB}`,
@@ -15,7 +15,16 @@ async function fetchPRs() {
 
   const data = await response.json();
 
-  const prs = (data.items || []).slice(0, 6).map((pr) => ({
+  console.log(
+    data.items.map((pr) => ({
+      title: pr.title,
+      repo: pr.repository_url,
+      created_at: pr.created_at,
+      updated_at: pr.updated_at,
+    })),
+  );
+
+  const prs = (data.items || []).slice(0, 9).map((pr) => ({
     id: pr.id,
     title: pr.title,
     url: pr.html_url,
