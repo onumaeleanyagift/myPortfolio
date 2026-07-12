@@ -43,7 +43,7 @@ const AboutSection = () => {
             <div className=" grid grid-rows-2 gap-4 lg:grid-rows-1 md:grid-rows-1">
               <div className="flex flex-col items-justify bg-[#1D1D1D] rounded-lg p-6">
                 <div className="font-semibold pb-4">Frontend</div>
-                <div className="grid grid-cols-2 gap-2 text-center lg:grid-cols-7 md:grid-cols-5 text-[#2DD4BF]">
+                <div className="grid grid-cols-2 gap-2 text-center items-center lg:grid-cols-7 md:grid-cols-5 text-[#2DD4BF]">
                   <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
                     HTML5
                   </span>
@@ -65,7 +65,7 @@ const AboutSection = () => {
                   <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
                     Bootstrap
                   </span>
-                  <span className="bg-[#252525] text-sm text-center rounded-full px-3 py-1">
+                  <span className="bg-[#252525] text-sm rounded-full px-3 py-1">
                     Styled Components
                   </span>
                 </div>
